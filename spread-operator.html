@@ -48,23 +48,23 @@
         console.log({...user, ...address});
 
         // // rest parameters
-        // function toplam(...args) {
-        //     let sonuc = 0;
+        function toplam(...args) {
+            let sonuc = 0;
 
-        //     for (let sayi of args) {
-        //         sonuc += sayi;
-        //     } 
-        //     return sonuc;
-        // }
+            for (let sayi of args) {
+                sonuc += sayi;
+            } 
+            return sonuc;
+        }
 
-        // console.log(toplam(1,3,5));
-        // console.log(toplam(1,3,5,10,20));
+        console.log(toplam(1,3,5));
+        console.log(toplam(1,3,5,10,20));
 
-        // function bilgileriGoster(isim, soyad, ...adres) {
-        //     console.log(isim, soyad, adres);
-        // }
+        function bilgileriGoster(isim, soyad, ...adres) {
+            console.log(isim, soyad, adres);
+        }
 
-        // bilgileriGoster("ali","turan","istanbul","kadıköy")
+        bilgileriGoster("harun","hatib","buharkent","aydın")
             
     </script>
 

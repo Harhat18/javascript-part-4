@@ -9,18 +9,18 @@ const next = document.querySelector("#controls #next");
 const player = new MusicPlayer(musicList);
 
 window.addEventListener("load", () => {
-  let music;
-  player.getMusic();
-  displayMusic(music);
+    let music = player.getMusic();
+    displayMusic(music);
 });
 
 function displayMusic(music) {
-  title.innerText = music.getName();
-  singer.innerText = music.singer;
-  image.src = "img/" + music.img;
-  audio.src = "mp3/" + music.file;
+    title.innerText = music.getName();
+    singer.innerText = music.singer;
+    image.src = "img/" + music.img;
+    audio.src = "mp3/" + music.file;
 }
 
 play.addEventListener("click", () => {
-  audio.play();
-});
+    audio.play();
+})
+
